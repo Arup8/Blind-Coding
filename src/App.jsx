@@ -8,6 +8,7 @@ import SubmitButton from "./components/SubmitButton";
 import ResetButton from "./components/ResetButton";
 import "./App.css";
 import CodeButton from "./components/CodeButton";
+import Logo from "./blind.png"
 
 const BlindCodingRound = () => {
   const [code1, setCode1] = useState("");
@@ -187,12 +188,16 @@ const BlindCodingRound = () => {
         minHeight: "100vh",
       }}
     >
+
+      <div style={{display: "flex", justifyContent: "center", alignItems: "center"}}>
+      <img src={Logo} alt="logo" />
       <h2
       style={{textAlign: 'center'}}
-      >Blind Coding Round</h2>
+      ><span style={{color: "#ff9300"}}>Blind</span> Coding <span style={{color: "#59ff00"}}>Round</span></h2>
+      </div>
       <div className="Navbar-next" style={{ display: "flex" }}>
         <div style={{ marginBottom: "19px" }}>
-          <h4 style={{ marginBottom: "10px", marginTop: "19px" }}>
+          <h4 style={{ marginBottom: "10px", marginTop: "19px", color: "blue" }}>
             Select language
           </h4>
           <CustomSelect
@@ -212,7 +217,7 @@ const BlindCodingRound = () => {
         style={{
           margin: "20px 0",
           padding: "15px",
-          border: "1px solid #ccc",
+          border: "1px solid #bd00ff",
           borderRadius: "5px",
           backgroundColor: darkTheme ? "#2e2e2e" : "#ffffff",
           color: darkTheme ? "#52ff33" : "#000000",
@@ -283,7 +288,7 @@ const BlindCodingRound = () => {
             fontSize: "16px",
             backgroundColor: darkTheme ? "#2c2c2c" : "#ffffff",
             color: darkTheme ? "#ffffff" : "#000000",
-            border: "1px solid #ccc",
+            border: "1px solid #fffb00",
             borderRadius: "5px",
             boxSizing: "border-box",
           }}
@@ -380,7 +385,7 @@ const BlindCodingRound = () => {
         style={{
           margin: "20px 0",
           padding: "15px",
-          border: "1px solid #ccc",
+          border: "1px solid #bd00ff",
           borderRadius: "5px",
           backgroundColor: darkTheme ? "#2e2e2e" : "#ffffff",
           color: darkTheme ? "#52ff33" : "#000000",
@@ -490,7 +495,7 @@ const BlindCodingRound = () => {
             fontSize: "16px",
             backgroundColor: darkTheme ? "#2c2c2c" : "#ffffff",
             color: darkTheme ? "#ffffff" : "#000000",
-            border: "1px solid #ccc",
+            border: "1px solid #fffb00",
             borderRadius: "5px",
             boxSizing: "border-box",
           }}
