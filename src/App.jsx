@@ -255,6 +255,8 @@ const BlindCodingRound = () => {
             <br />
             Result: [36, 60, 90, 30]
           </code>
+          <br/><br/>
+          You must write an algorithm that runs in O(n) time and without using the division operation.
           <br />
           <br />
         </h4>
