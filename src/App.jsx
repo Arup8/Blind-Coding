@@ -9,6 +9,7 @@ import ResetButton from "./components/ResetButton";
 import "./App.css";
 import CodeButton from "./components/CodeButton";
 import Logo from "./blind.png"
+import Footer from "./components/Footer";
 
 const BlindCodingRound = () => {
   const [code1, setCode1] = useState("");
@@ -180,6 +181,8 @@ const BlindCodingRound = () => {
   ];
 
   return (
+    <>
+    
     <div
       style={{
         padding: "20px",
@@ -586,6 +589,8 @@ const BlindCodingRound = () => {
         </div>
       )}
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 
