@@ -187,7 +187,9 @@ const BlindCodingRound = () => {
         minHeight: "100vh",
       }}
     >
-      <h2>Blind Coding Round</h2>
+      <h2
+      style={{textAlign: 'center'}}
+      >Blind Coding Round</h2>
       <div className="Navbar-next" style={{ display: "flex" }}>
         <div style={{ marginBottom: "19px" }}>
           <h4 style={{ marginBottom: "10px", marginTop: "19px" }}>
