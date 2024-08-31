@@ -25,8 +25,9 @@ const BlindCodingRound = () => {
   const [loading2, setLoading2] = useState(false);
   const [blurred, setBlurred] = useState(true);
   const [darkTheme, setDarkTheme] = useState(true);
-  const [showCode, setShowCode] = useState(false); // New state to manage code textarea visibility
-
+  const [showCode1, setShowCode1] = useState(false); // New state to manage code textarea visibility
+  const [showCode2, setShowCode2] = useState(false); // New state to manage code textarea visibility
+  
   useEffect(() => {
     const handleBeforeUnload = (event) => {
       if (code1 || inputs1 || code2 || inputs2) {
@@ -152,7 +153,7 @@ const BlindCodingRound = () => {
     setSubmitted1(false);
     setOutput1("");
     setBlurred(true);
-    setShowCode(false); // Reset the showCode state
+    setShowCode1(false); // Reset the showCode state
   };
   const handleReset2 = () => {
     setCode2("");
@@ -161,15 +162,18 @@ const BlindCodingRound = () => {
     setSubmitted2(false);
     setOutput2("");
     setBlurred(true);
-    setShowCode(false); // Reset the showCode state
+    setShowCode2(false); // Reset the showCode state
   };
 
   const toggleTheme = () => {
     setDarkTheme((prev) => !prev);
   };
 
-  const handleToggleCode = () => {
-    setShowCode((prev) => !prev); // Toggle the showCode state
+  const handleToggleCode1 = () => {
+    setShowCode1((prev) => !prev); // Toggle the showCode state
+  };
+  const handleToggleCode2 = () => {
+    setShowCode2((prev) => !prev); // Toggle the showCode state
   };
 
   const options = [
@@ -325,14 +329,14 @@ const BlindCodingRound = () => {
                   alignItems: "flex-start",
                 }}
               >
-                {!showCode ? (
-                  <CodeButton onClick={handleToggleCode} />
+                {!showCode1 ? (
+                  <CodeButton onClick={handleToggleCode1} />
                 ) : (
-                  <button className="close-button" onClick={handleToggleCode}>
+                  <button className="close-button" onClick={handleToggleCode1}>
                     Close
                   </button>
                 )}
-                {showCode && (
+                {showCode1 && (
                   <div>
                     <h3 style={{ marginTop: "20px", marginBottom: "10px" }}>
                       Code:
@@ -532,14 +536,14 @@ const BlindCodingRound = () => {
                   alignItems: "flex-start",
                 }}
               >
-                {!showCode ? (
-                  <CodeButton onClick={handleToggleCode} />
+                {!showCode2 ? (
+                  <CodeButton onClick={handleToggleCode2} />
                 ) : (
-                  <button className="close-button" onClick={handleToggleCode}>
+                  <button className="close-button" onClick={handleToggleCode2}>
                     Close
                   </button>
                 )}
-                {showCode && (
+                {showCode2 && (
                   <div>
                     <h3 style={{ marginTop: "20px", marginBottom: "10px" }}>
                       Code:
