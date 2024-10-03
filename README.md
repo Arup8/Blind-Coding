@@ -16,6 +16,12 @@ The app link -> [blind-coding-iota.vercel.app](https://blind-coding-iota.vercel.
 ## Piston Api 
 https://piston.readthedocs.io/en/latest/api-v2/ (Read the docs from here)
 
+## Technologies Used
+
+- Node.js 
+- Vite+React
+- Piston Api
+
 ## Installation and Setup
 
 1. **Clone the repository:**
