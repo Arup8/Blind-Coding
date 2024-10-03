@@ -15,3 +15,28 @@ The app link -> [blind-coding-iota.vercel.app](https://blind-coding-iota.vercel.
 
 ## Piston Api 
 https://piston.readthedocs.io/en/latest/api-v2/ (Read the docs from here)
+
+## Installation and Setup
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/Arup8/Blind-Coding.git
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    cd Blind-Coding
+    npm install
+    ```
+
+3. **Start the server:**
+
+    ```bash
+    npm run dev
+    ```
+
+## Contributing
+
+If you wish to contribute to this project, please feel free to contribute.
